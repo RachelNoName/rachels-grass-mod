@@ -1,11 +1,11 @@
-package net.rachel.gtgrass.items;
+package net.rachel.rachels_grass.items;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.rachel.gtgrass.RachelsGrass;
+import net.rachel.rachels_grass.RachelsGrass;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, RachelsGrass.MODID);

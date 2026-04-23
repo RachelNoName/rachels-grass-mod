@@ -1,4 +1,4 @@
-package net.rachel.gtgrass;
+package net.rachel.rachels_grass;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -16,7 +16,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.rachel.gtgrass.items.ModItems;
+import net.rachel.rachels_grass.items.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
