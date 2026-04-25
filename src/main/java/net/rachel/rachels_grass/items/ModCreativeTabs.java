@@ -6,6 +6,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.rachel.rachels_grass.RachelsGrass;
+import net.rachel.rachels_grass.block.ModBlocks;
 
 import org.antlr.v4.parse.ANTLRParser.finallyClause_return;
 
@@ -21,6 +22,7 @@ public class ModCreativeTabs {
 			.title(Component.translatable("creativetab.rachels_grass"))
 			.displayItems((pParamaters, pOutput) -> {
 				pOutput.accept(ModItems.GRASS_BUNDLE.get());
+				pOutput.accept(ModBlocks.BLOCK_OF_GRASS.get());
 			})
 			.build());
 	
