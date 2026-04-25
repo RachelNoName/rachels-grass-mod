@@ -13,13 +13,14 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rachel.rachels_grass.RachelsGrass;
+import net.rachel.rachels_grass.block.custom.BlockOfGrassBlock;
 import net.rachel.rachels_grass.items.ModItems;
 
 public class ModBlocks {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, RachelsGrass.MODID);
 	
 	public static final RegistryObject<Block> BLOCK_OF_GRASS = registerBlock("block_of_grass", 
-			() -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK)));
+			() -> new BlockOfGrassBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK)));
 	
 	
 	
