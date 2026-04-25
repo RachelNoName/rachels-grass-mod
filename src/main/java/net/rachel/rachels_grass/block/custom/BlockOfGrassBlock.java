@@ -1,5 +1,6 @@
 package net.rachel.rachels_grass.block.custom;
 
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.Entity;
@@ -10,6 +11,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.extensions.IForgeBlock;
 
 public class BlockOfGrassBlock extends RotatedPillarBlock implements IForgeBlock{
+	
+	public static final int FLAMABILITY = 60;
 
 	public BlockOfGrassBlock(Properties pProperties) {
 		super(pProperties);
@@ -22,6 +25,6 @@ public class BlockOfGrassBlock extends RotatedPillarBlock implements IForgeBlock
 	
 	@Override
 	public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-		return 300;
+		return FLAMABILITY;
 	}
 }
