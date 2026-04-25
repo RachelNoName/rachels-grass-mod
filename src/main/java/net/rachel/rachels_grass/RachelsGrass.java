@@ -16,6 +16,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.rachel.rachels_grass.items.ModCreativeTabs;
 import net.rachel.rachels_grass.items.ModItems;
 import org.slf4j.Logger;
 
@@ -30,7 +31,8 @@ public class RachelsGrass
     public RachelsGrass(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
-
+        
+        ModCreativeTabs.register(modEventBus);
         ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
@@ -47,9 +49,6 @@ public class RachelsGrass
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.GRASS_BUNDLE);
-        }
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
