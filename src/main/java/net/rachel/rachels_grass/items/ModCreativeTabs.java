@@ -8,8 +8,6 @@ import net.minecraftforge.registries.RegistryObject;
 import net.rachel.rachels_grass.RachelsGrass;
 import net.rachel.rachels_grass.block.ModBlocks;
 
-import org.antlr.v4.parse.ANTLRParser.finallyClause_return;
-
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 
