@@ -3,6 +3,7 @@ package net.rachel.rachels_grass.block;
 import java.util.function.Supplier;
 
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -19,7 +20,7 @@ public class ModBlocks {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, RachelsGrass.MODID);
 	
 	public static final RegistryObject<Block> BLOCK_OF_GRASS = registerBlock("grass_block", 
-			() -> new GrassBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK)));
+			() -> new GrassBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).mapColor(DyeColor.LIME)));
 	
 	
 	
