@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "rachels_grass:block_of_grass"
+          "name": "rachels_grass:grass_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "rachels_grass:blocks/block_of_grass"
+  "random_sequence": "rachels_grass:blocks/grass_block"
 }

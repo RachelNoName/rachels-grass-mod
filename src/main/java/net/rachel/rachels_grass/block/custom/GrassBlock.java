@@ -10,11 +10,11 @@ import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.extensions.IForgeBlock;
 
-public class BlockOfGrassBlock extends RotatedPillarBlock implements IForgeBlock{
+public class GrassBlock extends RotatedPillarBlock implements IForgeBlock{
 	
 	public static final int FLAMABILITY = 60;
 
-	public BlockOfGrassBlock(Properties pProperties) {
+	public GrassBlock(Properties pProperties) {
 		super(pProperties);
 		// TODO Auto-generated constructor stub
 	}
