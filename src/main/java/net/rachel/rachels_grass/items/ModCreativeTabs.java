@@ -20,7 +20,7 @@ public class ModCreativeTabs {
 			.title(Component.translatable("creativetab.rachels_grass"))
 			.displayItems((pParamaters, pOutput) -> {
 				pOutput.accept(ModItems.GRASS_BUNDLE.get());
-				pOutput.accept(ModBlocks.BLOCK_OF_GRASS.get());
+				pOutput.accept(ModBlocks.GRASS_BLOCK.get());
 			})
 			.build());
 	

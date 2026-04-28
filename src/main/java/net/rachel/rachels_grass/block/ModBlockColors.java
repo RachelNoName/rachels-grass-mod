@@ -18,7 +18,7 @@ import net.rachel.rachels_grass.RachelsGrass;
 public class ModBlockColors {
 	@SubscribeEvent
 	public static void blockColorHandlerEvent(final RegisterColorHandlersEvent.Block event) {
-		event.register(ModBlockColors::getGrassTint, ModBlocks.BLOCK_OF_GRASS.get());
+		event.register(ModBlockColors::getGrassTint, ModBlocks.GRASS_BLOCK.get());
 	}
 	
 	private static int getGrassTint(BlockState state, @Nullable BlockAndTintGetter world, @Nullable BlockPos pos, int tintIndex) {		
