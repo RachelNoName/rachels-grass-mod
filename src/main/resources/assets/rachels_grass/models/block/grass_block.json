@@ -2,7 +2,8 @@
   "parent": "minecraft:block/cube_column",
   "textures": {
     "end": "rachels_grass:block/grass_block_end",
-    "side": "rachels_grass:block/grass_block_side"
+    "side": "rachels_grass:block/grass_block_side",
+	"overlay": "rachels_grass:block/grass_block_overlay"
   },
   "elements": [
          {   "from": [ 0, 0, 0 ],
@@ -15,6 +16,15 @@
 			 		"west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#side", "tintindex": 0, "cullface": "west" },
 			 		"east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#side", "tintindex": 0, "cullface": "east" }
 			 }
-         }
+         },
+		 {   "from": [ 0, 0, 0 ],
+		     "to": [ 16, 16, 16 ],
+		     "faces": {
+		  			"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#overlay", "tintindex": -1, "cullface": "north" },
+		  			"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#overlay", "tintindex": -1, "cullface": "south" },
+		  			"west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#overlay", "tintindex": -1, "cullface": "west" },
+		  			"east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#overlay", "tintindex": -1, "cullface": "east" }
+		  }
+		 }
      ]
 }
