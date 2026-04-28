@@ -21,7 +21,11 @@ public class ModBlockColors {
 		event.register(ModBlockColors::getGrassTint, ModBlocks.BLOCK_OF_GRASS.get());
 	}
 	
-	private static int getGrassTint(BlockState state, @Nullable BlockAndTintGetter world, @Nullable BlockPos pos, int tintIndex) {
-		return world != null && pos != null ? BiomeColors.getAverageGrassColor(world, pos) : -1;
+	private static int getGrassTint(BlockState state, @Nullable BlockAndTintGetter world, @Nullable BlockPos pos, int tintIndex) {		
+		if (world == null || pos == null) {
+			return -1;
+		}
+		
+		return BiomeColors.getAverageGrassColor(world, pos);
 	}
 }
