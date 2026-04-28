@@ -1,6 +1,11 @@
 package net.rachel.rachels_grass.block;
 
+import javax.annotation.Nullable;
+
 import net.minecraft.client.renderer.BiomeColors;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.BlockAndTintGetter;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.RegisterColorHandlersEvent;
@@ -13,8 +18,10 @@ import net.rachel.rachels_grass.RachelsGrass;
 public class ModBlockColors {
 	@SubscribeEvent
 	public static void blockColorHandlerEvent(final RegisterColorHandlersEvent.Block event) {
-		event.register((state, world, pos, tintIndex) -> {
-	           return world != null && pos != null ? BiomeColors.getAverageGrassColor(world, pos) : -1;
-	        }, ModBlocks.BLOCK_OF_GRASS.get());
+		event.register(ModBlockColors::getGrassTint, ModBlocks.BLOCK_OF_GRASS.get());
+	}
+	
+	private static int getGrassTint(BlockState state, @Nullable BlockAndTintGetter world, @Nullable BlockPos pos, int tintIndex) {
+		return world != null && pos != null ? BiomeColors.getAverageGrassColor(world, pos) : -1;
 	}
 }
