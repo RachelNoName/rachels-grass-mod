@@ -4,7 +4,7 @@ Ads a few grass related blocks and items. Inspired by the grass cutting mechanic
 # Features
 (Note: The mod is still HEAVILY in development so almost none of these are added yet. Come back later and there will be more)   
 
-- ![Grass](src/main/resources/assets/rachels_grass/textures/item/grass_bundle.png) Adds new unique blocks and items.  
+- ![Grass](src/main/resources/assets/rachels_grass/textures/item/grass_bundle.png) Adds new unique grass related blocks and items.  
 - ![Grass](src/main/resources/assets/rachels_grass/textures/item/grass_bundle.png) Provides a way to cut grass using swords or knives.  
 - ![Grass](src/main/resources/assets/rachels_grass/textures/item/grass_bundle.png) Grass can be crafted into a unique block.  
 - ![Grass](src/main/resources/assets/rachels_grass/textures/item/grass_bundle.png) The grass block can dry if placed in the sun or become wet if placed in rain.  
