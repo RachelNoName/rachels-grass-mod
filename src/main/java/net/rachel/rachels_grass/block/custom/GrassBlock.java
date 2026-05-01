@@ -10,7 +10,7 @@ import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.extensions.IForgeBlock;
 
-public class GrassBlock extends RotatedPillarBlock implements IForgeBlock{
+public class GrassBlock extends RotatedPillarBlock implements IForgeBlock {
 	
 	public static final int FLAMABILITY = 60;
 
