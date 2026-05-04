@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "rachels_grass:block/dry_grass_block_end",
+    "side": "rachels_grass:block/dry_grass_block_side"
+  }
+}

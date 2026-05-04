@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "rachels_grass:item/dry_grass_bundle"
+  }
+}
