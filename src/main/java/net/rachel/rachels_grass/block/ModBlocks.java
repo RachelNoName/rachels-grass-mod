@@ -14,6 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rachel.rachels_grass.RachelsGrass;
 import net.rachel.rachels_grass.block.custom.GrassBlock;
+import net.rachel.rachels_grass.block.custom.GrassBlockBase;
 import net.rachel.rachels_grass.items.ModItems;
 
 public class ModBlocks {
@@ -22,7 +23,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> GRASS_BLOCK = registerBlock("grass_block", 
 			() -> new GrassBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).mapColor(DyeColor.LIME)));
 	
-	public static final RegistryObject<Block> DRY_GRASS_BLOCK = registerBlock("dry_grass_block", () -> new GrassBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK)));
+	public static final RegistryObject<Block> DRY_GRASS_BLOCK = registerBlock("dry_grass_block", () -> new GrassBlockBase(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK)));
 	
 	
 	
