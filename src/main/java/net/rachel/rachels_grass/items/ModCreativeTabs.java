@@ -21,6 +21,7 @@ public class ModCreativeTabs {
 			.displayItems((pParamaters, pOutput) -> {
 				pOutput.accept(ModItems.GRASS_BUNDLE.get());
 				pOutput.accept(ModBlocks.GRASS_BLOCK.get());
+				pOutput.accept(ModItems.DRY_GRASS_BUNDLE.get());
 			})
 			.build());
 	

@@ -11,6 +11,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, RachelsGrass.MODID);
 
     public static final RegistryObject<Item> GRASS_BUNDLE = ITEMS.register("grass_bundle", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DRY_GRASS_BUNDLE = ITEMS.register("dry_grass_bundle", () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
