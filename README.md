@@ -2,7 +2,7 @@
 Ads a few grass related blocks and items. Inspired by the grass cutting mechanic from [GregTech 6](https://gregtech.overminddl1.com/).
 
 # Features
-(Note: The mod is still HEAVILY in development so almost none of these are added yet. Come back later and there will be more)   
+(Note: The mod is still HEAVILY in development so almost none of these are added yet. This list is currently more like a list of planned features. I am working on it!)   
 
 - ![Grass](src/main/resources/assets/rachels_grass/textures/item/grass_bundle.png) Adds new unique grass related blocks and items.  
 - ![Grass](src/main/resources/assets/rachels_grass/textures/item/grass_bundle.png) Provides a way to cut grass using swords or knives.  
