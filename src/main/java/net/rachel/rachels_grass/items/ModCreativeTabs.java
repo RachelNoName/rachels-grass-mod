@@ -14,7 +14,7 @@ import net.minecraft.network.chat.Component;
 public class ModCreativeTabs {
 	public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RachelsGrass.MODID);
 	
-	public static final RegistryObject<CreativeModeTab> RACHELS_GRASS_TAB = CREATIVE_MODE_TABS.register("rachels_grass_tab", 
+	public static final RegistryObject<CreativeModeTab> RACHELS_GRASS_TAB = CREATIVE_MODE_TABS.register("rachels_grass_tab",
 			() -> CreativeModeTab.builder()
 			.icon(() -> new ItemStack(ModItems.GRASS_BUNDLE.get()))
 			.title(Component.translatable("creativetab.rachels_grass"))
