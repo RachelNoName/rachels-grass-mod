@@ -17,7 +17,8 @@ public class GrassBlockBase extends RotatedPillarBlock implements IForgeBlock {
 	public GrassBlockBase(Properties pProperties) {
 		super(pProperties);
 	}
-	
+
+	@Override
 	public void fallOn(Level pLevel, BlockState pBlockState, BlockPos pBlockPos, Entity pEntity, float pFallDistance) {
 		pEntity.causeFallDamage(pFallDistance, 0.2F, pLevel.damageSources().fall());
 	}
