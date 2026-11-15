@@ -12,7 +12,7 @@ import net.minecraftforge.common.extensions.IForgeBlock;
 
 
 public class GrassBlockBase extends RotatedPillarBlock implements IForgeBlock {	
-	public static final int FLAMABILITY = 60;
+	public static final int FLAMMABILITY = 60;
 
 	public GrassBlockBase(Properties pProperties) {
 		super(pProperties);
@@ -24,6 +24,6 @@ public class GrassBlockBase extends RotatedPillarBlock implements IForgeBlock {
 	
 	@Override
 	public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-		return FLAMABILITY;
+		return FLAMMABILITY;
 	}
 }

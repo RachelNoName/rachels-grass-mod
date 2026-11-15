@@ -23,7 +23,7 @@ public class RachelsGrass
     // Define mod id in a common place for everything to reference
     public static final String MODID = "rachels_grass";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     public RachelsGrass(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
