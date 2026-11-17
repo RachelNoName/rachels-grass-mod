@@ -17,11 +17,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         super(output, RachelsGrass.MODID, exFileHelper);
     }
 
+
     @Override
     protected void registerStatesAndModels() {
         tintedAxisBlockWithOverlay(ModBlocks.GRASS_BLOCK);
         simpleAxisBlock(ModBlocks.DRY_GRASS_BLOCK);
     }
+
 
     private void simpleAxisBlock(RegistryObject<Block> block) {
         RotatedPillarBlock pillarBlock = (RotatedPillarBlock) block.get();
@@ -29,12 +31,35 @@ public class ModBlockStateProvider extends BlockStateProvider {
         itemModels().withExistingParent(name(pillarBlock), ResourceLocation.parse(RachelsGrass.MODID.concat(":block/").concat(name(pillarBlock))));
     }
 
+
     private void tintedAxisBlockWithOverlay(RegistryObject<Block> block) {
+        final String BASE_NAME = name(block.get());
+        tintedAxisBlockWithOverlay(block, "block/" + BASE_NAME + "_side", "block/" + BASE_NAME + "_end", "block/" + BASE_NAME + "_overlay");
+    }
+
+
+    private void tintedAxisBlockWithOverlay(RegistryObject<Block> block, String baseNameOverride) {
+        tintedAxisBlockWithOverlay(block, "block/" + baseNameOverride + "_side", "block/" + baseNameOverride + "_end", "block/" + baseNameOverride + "_overlay");
+    }
+
+
+    private void tintedAxisBlockWithOverlay(RegistryObject<Block> block, String baseNameOverride, String overlayBaseNameOverride) {
+        tintedAxisBlockWithOverlay(block, "block/" + baseNameOverride + "_side", "block/" + baseNameOverride + "_end", "block/" + overlayBaseNameOverride + "_overlay");
+    }
+
+
+    private void tintedAxisBlockWithOverlayOverride(RegistryObject<Block> block, String overlayOverride) {
+        final String BASE_NAME = name(block.get());
+        tintedAxisBlockWithOverlay(block, "block/" + BASE_NAME + "_side", "block/" + BASE_NAME + "_end", "block/" + overlayOverride + "_overlay");
+    }
+
+
+    private void tintedAxisBlockWithOverlay(RegistryObject<Block> block, String sideTextureLocation, String endTextureLocation, String overlayTextureLocation) {
         RotatedPillarBlock pillarBlock = (RotatedPillarBlock) block.get();
 
-        ResourceLocation sideTexture = ResourceLocation.fromNamespaceAndPath(RachelsGrass.MODID, "block/" + name(pillarBlock) + "_side");
-        ResourceLocation endTexture = ResourceLocation.fromNamespaceAndPath(RachelsGrass.MODID, "block/" + name(pillarBlock) + "_end");
-        ResourceLocation overlayTexture = ResourceLocation.fromNamespaceAndPath(RachelsGrass.MODID, "block/" + name(pillarBlock) + "_overlay");
+        ResourceLocation sideTexture = ResourceLocation.fromNamespaceAndPath(RachelsGrass.MODID, sideTextureLocation);
+        ResourceLocation endTexture = ResourceLocation.fromNamespaceAndPath(RachelsGrass.MODID, endTextureLocation);
+        ResourceLocation overlayTexture = ResourceLocation.fromNamespaceAndPath(RachelsGrass.MODID, overlayTextureLocation);
 
         ResourceLocation renderType = ResourceLocation.fromNamespaceAndPath("minecraft", "cutout");
 
@@ -73,9 +98,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         itemModels().withExistingParent(name(pillarBlock), ResourceLocation.parse(RachelsGrass.MODID.concat(":block/").concat(name(pillarBlock))));
     }
 
+
     private String name(Block block) {
         return key(block).getPath();
     }
+
 
     private ResourceLocation key(Block block) {
         return ForgeRegistries.BLOCKS.getKey(block);
