@@ -19,6 +19,7 @@ public class ModBlockColors {
 	@SubscribeEvent
 	public static void blockColorHandlerEvent(final RegisterColorHandlersEvent.Block event) {
 		event.register(ModBlockColors::getGrassTint, ModBlocks.GRASS_BLOCK.get());
+		event.register(ModBlockColors::getGrassTint, ModBlocks.SLIGHTLY_DRY_GRASS_BLOCK.get());
 	}
 	
 	private static int getGrassTint(BlockState state, @Nullable BlockAndTintGetter world, @Nullable BlockPos pos, int tintIndex) {		

@@ -19,6 +19,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.GRASS_BLOCK.get());
+        this.dropSelf(ModBlocks.SLIGHTLY_DRY_GRASS_BLOCK.get());
         this.dropSelf(ModBlocks.DRY_GRASS_BLOCK.get());
     }
 

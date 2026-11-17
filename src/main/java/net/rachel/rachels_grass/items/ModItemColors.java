@@ -16,6 +16,7 @@ public class ModItemColors {
 	@SubscribeEvent
 	public static void itemColorHandlerEvent(final RegisterColorHandlersEvent.Item event) {
 		event.register(ModItemColors::getGrassItemColor, ModBlocks.GRASS_BLOCK.get());
+		event.register(ModItemColors::getGrassItemColor, ModBlocks.SLIGHTLY_DRY_GRASS_BLOCK.get());
 	}
 	
 	private static int getGrassItemColor(ItemStack item, int tintIndev) {

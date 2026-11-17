@@ -22,6 +22,7 @@ public class ModLanguageProvider extends LanguageProvider {
         this.add(ModItems.DRY_GRASS_BUNDLE.get(), "Dry Grass Bundle");
 
         this.add(ModBlocks.GRASS_BLOCK.get(), "Block of Grass");
+        this.add(ModBlocks.SLIGHTLY_DRY_GRASS_BLOCK.get(), "Slightly Dry Block of Grass");
         this.add(ModBlocks.DRY_GRASS_BLOCK.get(), "Dry Block of Grass");
     }
 
