@@ -22,6 +22,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         tintedAxisBlockWithOverlay(ModBlocks.GRASS_BLOCK);
         tintedAxisBlockWithOverlayOverride(ModBlocks.SLIGHTLY_DRY_GRASS_BLOCK, "grass_block");
+        tintedAxisBlockWithOverlayOverride(ModBlocks.VERY_DRY_GRASS_BLOCK, "grass_block");
         simpleAxisBlock(ModBlocks.DRY_GRASS_BLOCK);
     }
 

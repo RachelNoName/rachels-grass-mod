@@ -25,6 +25,9 @@ public class ModBlocks {
 	
 	public static final RegistryObject<Block> SLIGHTLY_DRY_GRASS_BLOCK = registerBlock("slightly_dry_grass_block", 
 			() -> new GrassBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).mapColor(DyeColor.GREEN)));
+
+	public static final RegistryObject<Block> VERY_DRY_GRASS_BLOCK = registerBlock("very_dry_grass_block",
+			() -> new GrassBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).mapColor(DyeColor.YELLOW)));
 	
 	public static final RegistryObject<Block> DRY_GRASS_BLOCK = registerBlock("dry_grass_block", () -> new GrassBlockBase(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK)));
 	

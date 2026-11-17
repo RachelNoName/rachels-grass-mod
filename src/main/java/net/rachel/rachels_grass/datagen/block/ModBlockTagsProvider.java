@@ -22,6 +22,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(
                         ModBlocks.GRASS_BLOCK.get(),
                         ModBlocks.SLIGHTLY_DRY_GRASS_BLOCK.get(),
+                        ModBlocks.VERY_DRY_GRASS_BLOCK.get(),
                         ModBlocks.DRY_GRASS_BLOCK.get());
     }
 }

@@ -23,6 +23,7 @@ public class ModCreativeTabs {
 				pOutput.accept(ModItems.DRY_GRASS_BUNDLE.get());
 				pOutput.accept(ModBlocks.GRASS_BLOCK.get());
 				pOutput.accept(ModBlocks.SLIGHTLY_DRY_GRASS_BLOCK.get());
+				pOutput.accept(ModBlocks.VERY_DRY_GRASS_BLOCK.get());
 				pOutput.accept(ModBlocks.DRY_GRASS_BLOCK.get());
 			})
 			.build());
