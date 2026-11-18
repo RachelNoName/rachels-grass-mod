@@ -21,8 +21,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         tintedAxisBlockWithOverlay(ModBlocks.GRASS_BLOCK);
-        tintedAxisBlockWithOverlayOverride(ModBlocks.SLIGHTLY_DRY_GRASS_BLOCK, "grass_block");
-        tintedAxisBlockWithOverlayOverride(ModBlocks.VERY_DRY_GRASS_BLOCK, "grass_block");
+        tintedAxisBlockWithOverlay(ModBlocks.SLIGHTLY_DRY_GRASS_BLOCK, "grass_block");
+        tintedAxisBlockWithOverlay(ModBlocks.VERY_DRY_GRASS_BLOCK, "grass_block");
         simpleAxisBlock(ModBlocks.DRY_GRASS_BLOCK);
     }
 
@@ -42,17 +42,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void tintedAxisBlockWithOverlay(RegistryObject<Block> block, String baseNameOverride) {
         tintedAxisBlockWithOverlay(block, "block/" + baseNameOverride + "_side", "block/" + baseNameOverride + "_end", "block/" + baseNameOverride + "_overlay");
-    }
-
-
-    private void tintedAxisBlockWithOverlay(RegistryObject<Block> block, String baseNameOverride, String overlayBaseNameOverride) {
-        tintedAxisBlockWithOverlay(block, "block/" + baseNameOverride + "_side", "block/" + baseNameOverride + "_end", "block/" + overlayBaseNameOverride + "_overlay");
-    }
-
-
-    private void tintedAxisBlockWithOverlayOverride(RegistryObject<Block> block, String overlayOverride) {
-        final String BASE_NAME = name(block.get());
-        tintedAxisBlockWithOverlay(block, "block/" + BASE_NAME + "_side", "block/" + BASE_NAME + "_end", "block/" + overlayOverride + "_overlay");
     }
 
 

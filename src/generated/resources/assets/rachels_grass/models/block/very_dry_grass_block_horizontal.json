@@ -78,8 +78,8 @@
   ],
   "render_type": "minecraft:cutout",
   "textures": {
-    "end": "rachels_grass:block/very_dry_grass_block_end",
+    "end": "rachels_grass:block/grass_block_end",
     "overlay": "rachels_grass:block/grass_block_overlay",
-    "side": "rachels_grass:block/very_dry_grass_block_side"
+    "side": "rachels_grass:block/grass_block_side"
   }
 }
