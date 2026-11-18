@@ -33,6 +33,6 @@ public class GrassBlock extends GrassBlockBase implements DimensionDryable, SunD
 	@Override
 	public void randomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
 		this.tick(pState, pLevel, pPos, pRandom);
-		this.onRandomTick(pState, pLevel, pPos, pRandom);
+		//this.onRandomTick(pState, pLevel, pPos, pRandom);
 	}
 }
