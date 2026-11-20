@@ -3,6 +3,8 @@ package net.rachel.rachels_grass.block;
 import javax.annotation.Nullable;
 
 import net.minecraft.client.renderer.BiomeColors;
+import net.minecraft.client.renderer.texture.SpriteLoader;
+import net.minecraft.client.renderer.texture.TextureAtlas;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.level.block.state.BlockState;
@@ -67,6 +69,10 @@ public class ModBlockColors {
 		int resultR = (int) ((float) fromR * (1.0f - t) + ((float) toR * t));
 		int resultG = (int) ((float) fromG * (1.0f - t) + ((float) toG * t));
 		int resultB = (int) ((float) fromB * (1.0f - t) + ((float) toB * t));
+
+		//resultR &= 0x0000ff;
+		//resultG &= 0x0000ff;
+		//resultB &= 0x0000ff;
 
 		return (resultR << 16) | (resultG << 8) | resultB;
 	}
