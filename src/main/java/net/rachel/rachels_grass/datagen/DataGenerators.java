@@ -13,6 +13,7 @@ import net.rachel.rachels_grass.datagen.block.ModBlockTagsProvider;
 import net.rachel.rachels_grass.datagen.item.ModItemModelProvider;
 import net.rachel.rachels_grass.datagen.item.ModItemTagProvider;
 import net.rachel.rachels_grass.datagen.lang.ModLanguageProvider;
+import net.rachel.rachels_grass.datagen.loot.ModGlobalLootModifierProvider;
 import net.rachel.rachels_grass.datagen.loot.ModLootTableProvider;
 
 import java.util.concurrent.CompletableFuture;
@@ -35,5 +36,7 @@ public class DataGenerators {
 
         ModBlockTagsProvider blockTagsProvider = generator.addProvider(event.includeServer(), new ModBlockTagsProvider(packOutput, lookupProvider, existingFileHelper));
         generator.addProvider(event.includeServer(), new ModItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
+
+        generator.addProvider(event.includeServer(), new ModGlobalLootModifierProvider(packOutput));
     }
 }

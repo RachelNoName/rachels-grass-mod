@@ -14,6 +14,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.rachel.rachels_grass.block.ModBlocks;
 import net.rachel.rachels_grass.items.ModCreativeTabs;
 import net.rachel.rachels_grass.items.ModItems;
+import net.rachel.rachels_grass.loot.ModLootModifiers;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -31,6 +32,7 @@ public class RachelsGrass
         ModCreativeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

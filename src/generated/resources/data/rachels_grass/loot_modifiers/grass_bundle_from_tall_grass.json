@@ -1,0 +1,18 @@
+{
+  "type": "rachels_grass:add_item",
+  "amount": 2,
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:blocks/tall_grass"
+    },
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "tag": "rachels_grass:can_harvest_grass"
+      }
+    }
+  ],
+  "damage": 1,
+  "item": "rachels_grass:grass_bundle"
+}

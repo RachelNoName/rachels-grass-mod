@@ -25,7 +25,6 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                      ModBlocks.VERY_DRY_GRASS_BLOCK.get(),
                      ModBlocks.DRY_GRASS_BLOCK.get());
 
-        this.tag(BlockTags.MINEABLE_WITH_HOE)
-                .addTag(ModTags.Blocks.GRASS_BLOCKS);
+        this.tag(BlockTags.MINEABLE_WITH_HOE).addTag(ModTags.Blocks.GRASS_BLOCKS);
     }
 }
