@@ -41,7 +41,7 @@ public class ModBlockColors {
 
 		int grassColor = BiomeColors.getAverageGrassColor(world, pos);
 
-		return ModBlockColors.colorLerp(grassColor, GRASS_YELLOW, 0.3f);
+		return ModBlockColors.colorLerp(grassColor, GRASS_YELLOW, 0.4f);
 	}
 
 	private static int getVeryDryGrassTint(BlockState state, @Nullable BlockAndTintGetter world, @Nullable BlockPos pos, int tintIndex) {
@@ -51,7 +51,7 @@ public class ModBlockColors {
 
 		int grassColor = BiomeColors.getAverageGrassColor(world, pos);
 
-		return ModBlockColors.colorLerp(grassColor, GRASS_YELLOW, 0.7f);
+		return ModBlockColors.colorLerp(grassColor, GRASS_YELLOW, 0.8f);
 	}
 
 
