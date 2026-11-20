@@ -70,10 +70,6 @@ public class ModBlockColors {
 		int resultG = (int) ((float) fromG * (1.0f - t) + ((float) toG * t));
 		int resultB = (int) ((float) fromB * (1.0f - t) + ((float) toB * t));
 
-		//resultR &= 0x0000ff;
-		//resultG &= 0x0000ff;
-		//resultB &= 0x0000ff;
-
 		return (resultR << 16) | (resultG << 8) | resultB;
 	}
 }
