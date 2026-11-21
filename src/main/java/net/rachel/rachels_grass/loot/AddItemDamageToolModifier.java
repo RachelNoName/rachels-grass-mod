@@ -4,6 +4,7 @@ import com.google.common.base.Suppliers;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -53,7 +54,7 @@ public class AddItemDamageToolModifier extends LootModifier {
             ItemStack item = player.getMainHandItem();
 
             if (item.isDamageableItem()) {
-                item.hurtAndBreak(damage, player, (Player p) -> {});
+                item.hurtAndBreak(damage, player, (Player p) -> {p.broadcastBreakEvent(InteractionHand.MAIN_HAND);});
             }
         }
 
